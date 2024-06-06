@@ -328,7 +328,7 @@
 
           
         <li class="nav-item has-treeview @if(Request::segment(2)=="option" ) menu-open @endif">
-            <a href="{{ route('admin.option.index') }}" class="nav-link @if(Request::segment(2)=="option") active @endif">
+            <a href="#" class="nav-link @if(Request::segment(2)=="option") active @endif">
                 <i class=" nav-icon fas fa-cog"></i>
                 <p>
                     {{ __('main.Options') }}
@@ -349,7 +349,7 @@
           <li class="nav-item">
             <form action="{{route('logout')}}" method="POST">
               @csrf
-              <a href="{{route('logout')}}" class="nav-link" onclick="event.preventDefault(); this.closest('form').submit();">
+              <a href="{{route('logout')}}" class="nav-link logoutsty" onclick="event.preventDefault(); if(confirm('Are you sure you want to logout?')){ this.closest('form').submit(); }">
                 <i class="nav-icon fas fa-power-off"></i>
                 {{ __('main.Logout') }}
               </a>

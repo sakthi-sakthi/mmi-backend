@@ -94,7 +94,7 @@
                     <p style="color: white;">{{ $auth->role }}</p>
                     <form action="{{route('logout')}}" method="POST">
                       @csrf
-                      <a href="{{route('logout')}}" class="nav-link logoutsty" onclick="event.preventDefault(); this.closest('form').submit();">
+                      <a href="{{route('logout')}}" class="nav-link logoutsty" onclick="event.preventDefault(); if(confirm('Are you sure you want to logout?')){ this.closest('form').submit(); }">
                         <i class="nav-icon fas fa-power-off"></i>
                         {{ __('main.Logout') }}
                       </a>
