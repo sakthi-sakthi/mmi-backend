@@ -19,7 +19,7 @@ use App\Http\Controllers\HomeController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/store/contactform/category', [ApiController::class, 'storecontact' ]); 
+Route::post('/store/contact', [ApiController::class, 'storecontact' ]); 
 Route::get('/get/post/{id}',[ApiController::class,'getpostdata']);
 Route::get('/get/slider/{id}',[ApiController::class,'getsliderimages']);
 Route::get('/get/Newsletter',[ApiController::class,'getnewsletter']);

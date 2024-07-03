@@ -52,7 +52,7 @@
                                 
                             </div>
                             <div class="text-right">
-                                <h5 class="card-title">Upcoming Eveents</h5>
+                                <h5 class="card-title">Upcoming Events</h5>
                                 <br>    
                                 {{-- <p class="card-text">Total Services:</p> --}}
                                 <strong>{{ $services }}</strong>

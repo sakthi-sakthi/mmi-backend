@@ -28,7 +28,6 @@ class ApiController extends Controller
              try {
                 $request->validate([
                     'name' => 'required',
-                    'type' => 'required',
                     'email' => 'required|email',
                     'mobile' => 'required',
                     'message' => 'required',
@@ -36,7 +35,6 @@ class ApiController extends Controller
                 ]);
                Contact::create($request->all());
                  $bodyContent = [
-                     "type" => $request['type'],
                      'toName' => $request['name'],
                      'toemail'   => $request['email'],
                      'tomobile'=> $request['mobile'],

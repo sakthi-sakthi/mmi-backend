@@ -38,7 +38,6 @@
                             <thead>
                                 <tr>
                                     <th>{{ __('main.id') }}</th>
-                                    <th>{{ __('main.Requestfor') }}</th>
                                     <th>{{ __('main.Name') }}</th>
                                     <th>{{ __('main.Email') }}</th>
                                     <th>{{ __('main.Mobile') }}</th>
@@ -50,7 +49,6 @@
                                 @foreach ($contacts as $key => $contact)
                                     <tr>
                                         <td>{{ $key +1 }}</td>
-                                        <td>{{ $contact->type }}</td>
                                         <td>{{ $contact->name }}</td>
                                         <td>{{ $contact->email }}</td>
                                         <td>{{ $contact->mobile }}</td>
